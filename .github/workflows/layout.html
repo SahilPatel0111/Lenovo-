@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Lenovo site prototype
+    </title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+
+</head>
+<body style="background-color: black; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:antiquewhite;
+    min-height: 100vh;
+    line-height:1.5em;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+
+    <div class="container">
+        <header class="header">
+            <h1 class="logo">Lenovo</h1>
+            <nav style="color: white;">
+                <a href="#">COMPANY</a>
+                <a href="#">PRODUCTS</a>
+                <a href="#">CART</a>
+                <a href="#">DOCS</a>
+            </nav>
+            <button class="login">Log In</button>
+
+        </header>
+
+    </div>
+   <div style="display: flex; flex-direction: row; align-items: flex-start; min-height: 100vh;">
+  <div class="signin-area" style="margin-right: 60px;">
+    <!-- Your existing sign-in form elements go here -->
+    <input class="email" type="text" placeholder="Email">
+    <input class="password" type="text" placeholder="Password">
+    <button class="submit">Sign In</button>
+  </div>
+  <model-viewer src="laptop.glb"
+                alt="Lenovo Laptop"
+                style="width: 400px; height: 280px; background: transparent;"
+                auto-rotate
+                camera-controls
+                shadow-intensity="1">
+  </model-viewer>
+</div>
+
+</body>
+</html>
